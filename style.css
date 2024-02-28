@@ -1,6 +1,7 @@
 :root {
     --background: hsl(210, 2%, 16%);
     --elevated: hsl(210, 2%, 26%);
+    --elevated-two: hsl(210, 2%, 46%);
     --font: hsl(214, 100%, 97%);
     --rainbow: linear-gradient(0deg, #630606, #E83A14, #FFD93D, #019267, #2FA4FF, #0E185F,#533E85);
     --button: hsl(206, 100%, 59%);
@@ -61,8 +62,14 @@ body {
 
 input {
     min-width: 400px;
+    height: 30px;
     border-radius: 10px;
     font-size: 1em;
+    background-color: var(--font);
+    border-style: none;
+    padding: 10px;
+    color: var(--background);
+    outline: none;
 }
 
 .header-second {
