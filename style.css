@@ -48,7 +48,7 @@ body {
 .header {
     background-color: var(--elevated);
     grid-column: 2 / 3;
-    padding: 25px;
+    padding: 25px 25px 40px 25px;
     display: grid;
     grid-template-rows: 1fr 2fr;
     gap: 25px;
@@ -118,7 +118,7 @@ input {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 25px 25px 25px;
+    padding: 0 25px 40px 25px;
     gap: 25px;
 }
 
