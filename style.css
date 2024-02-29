@@ -11,48 +11,111 @@
     background-color: var(--background);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
     background: var(--rainbow);
-    padding: 20px;
+    padding: 2rem;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .branding {
-    font-size: 1.4em;
-    margin-bottom: 50px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.sidebar-icon {
+    background-image: url("./images/icon.svg");
+    width: 3rem;
+    height: 3rem;
+}
+
+.sidebar-title {
+    font-size: 1.7rem;
 }
 
 .tabs {
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
     display: grid;
-    gap: 20px;
+    gap: 1.5rem;
+}
+
+.sidebar-icons {
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+#home-icon {
+    background-image: url("./images/home.svg");
+}
+
+#profile-icon {
+    background-image: url("./images/profile.svg");
+}
+
+#messages-icon {
+    background-image: url("./images/message.svg");
+}
+
+#history-icon {
+    background-image: url("./images/history.svg");
+}
+
+#tasks-icon {
+    background-image: url("./images/tasks.svg");
+}
+
+#communities-icon {
+    background-image: url("./images/community.svg");
+}
+
+#settings-icon {
+    background-image: url("./images/cog.svg");
+}
+
+#support-icon {
+    background-image: url("./images/help.svg");
+}
+
+#privacy-icon {
+    background-image: url("./images/privacy.svg");
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .account {
     display: grid;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .header {
     background-color: var(--elevated);
     grid-column: 2 / 3;
-    padding: 20px;
+    padding: 2em;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    gap: 25px;
+    gap: 2rem;
 }
 
 .search {
@@ -63,19 +126,18 @@ body {
 
 input {
     min-width: 400px;
-    height: 30px;
+    height: 1.5rem;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 1rem;
     background-color: var(--font);
     border-style: none;
-    padding: 10px;
+    padding: 1rem;
     color: var(--background);
     outline: none;
 }
 
 .header-second {
     display: flex;
-    gap: 100px;
     justify-content: space-between;
 }
 
@@ -121,7 +183,7 @@ input {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 25px 0px 25px;
+    padding: 0 25px 25px 25px;
 }
 
 .third-col {
@@ -133,14 +195,15 @@ input {
 .projects-container {
     grid-column: 1 / 2;
     display: grid;
-    gap: 25px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 25px;
+    justify-content: space-between;
 }
 
 .project-card {
     background-color: var(--elevated);
     padding: 20px;
-    min-width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
