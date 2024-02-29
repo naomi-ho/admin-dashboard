@@ -112,20 +112,33 @@ body {
 .header {
     background-color: var(--elevated);
     grid-column: 2 / 3;
-    padding: 2em;
+    padding: 1rem 2rem;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    gap: 2rem;
+}
+
+.header-left {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .search {
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.search-icon {
+    background-image: url("./images/search.svg");
+    height: 1.7rem;
+    width: 1.7rem;
 }
 
 input {
-    min-width: 400px;
+    width: 400px;
     height: 1.5rem;
     border-radius: 10px;
     font-size: 1rem;
@@ -136,9 +149,37 @@ input {
     outline: none;
 }
 
+#notif {
+    background-image: url("./images/bell.svg");
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+#user-pic {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.header-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .header-second {
     display: flex;
     justify-content: space-between;
+}
+
+.user-info > #user-pic {
+    height: 4rem;
+    width: 4rem;
+}
+
+.user-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .btns {
@@ -171,6 +212,7 @@ input {
 
 .greeting {
     margin-bottom: 5px;
+    font-weight: 300;
 }
 
 .user {
@@ -240,22 +282,43 @@ p {
 }
 
 .announcement {
-    padding: 5px 0px 5px 0px;
+    margin-bottom: 0.5rem;
 }
+
+.announcement-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.announcement-3 {
+    margin-top: 0.5rem;
+}
+
 
 .trendings {
     font-size: 0.9em;
 }
 
 .trending {
-    padding: 20px;
+    padding: 1.5rem;
     background-color: var(--elevated);
     display: grid;
-    gap: 15px;
+    gap: 1rem;
+}
+
+.trending-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .trending-title {
     font-weight: 300;
+}
+
+.trending-icon {
+    height: 2.2rem;
+    width: 2.2rem;
 }
 
 button:hover {
